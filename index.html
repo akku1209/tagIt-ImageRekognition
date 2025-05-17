@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tagIT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #002a53;
+        font-family: Rubik, sans-serif;
+    }
+
+    /* li {
+        float: left;
+    } */
+
+    li h1 {
+        text-align: center;
+        padding: 8px 30px;
+        float: left;
+
+    }
+
+    li p {
+        text-align: end;
+        padding: 50px 50px;
+
+
+    }
+
+    p {
+        left: 100px;
+        size: 50px;
+    }
+
+    #box {
+        border-radius: 25px;
+        background: #002a53;
+
+        color: white;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Create two equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px;
+        /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    hr.line {
+        border: 2px solid #002a53;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><img src="../static/bfl-logo.webp" style="height: 100px; width: 100px; top: 30px; left: 30px; padding: 20px 12px;
+            float: left;"></li>
+        <li>
+            <h1 style="color: white; font-family: Rubik,sans-serif;
+            line-height: 0.9;">BAJAJ <br>FINSERV
+            </h1>
+        </li>
+        <li>
+            <img src="../static/logo.png"
+                style="height: 100px; width: 100px; top: 30px; align-items: flex-end; float: right;">
+        </li>
+
+    </ul>
+    <hr class="line">
+    <br>
+    <br>
+    <div style="padding: 14px;" id="box">
+        <!-- form class="md-form" id="form_data" 
+            <div class="col-xs-5" id='Image_block' style="background-color: #6f7796;"> 
+                div class="file-field"
+            div class="btn btn-primary btn-sm float-left"-->
+
+        <div style="background-color: #002a53;">
+            <p style="float: left; padding:20px; font-size: x-large;"><b>Tag pictures
+                    with maximum accuracy with tagIT.</b></p><br><br><br>
+            <form action="/uploader" method="POST" enctype="multipart/form-data" style="float:left;">
+                <div>
+                    <div>
+                        <p style="float: left;">Choose file</p><br>
+
+                        <input type="file" name="file" value="file" multiple="multiple" accept="image/*"
+                            onchange="loadfile(event)">
+                        <br>
+                        <input class="btn btn-primary" type="submit" value="Upload"
+                            style="background-color: white; color: black;">
+                        <button onClick="window.location.reload();"
+                            style="padding: 6px; background-color: white; color: black;">Refresh</button>
+                        <br>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="column">
+            <p><input type="file" multiple="multiple" accept="image/*" name="image" id="file" onchange="loadFile(event)"
+                    style="display: none;">
+            </p>
+        </div>
+
+    </div> -->
+    <br><br><br>
+
+
+    <script>
+
+    </script>
+
+</body>
+
+</html>

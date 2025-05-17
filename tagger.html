@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tagIT</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #002a53;
+        font-family: Rubik, sans-serif;
+    }
+
+    /* li {
+        float: left;
+    } */
+
+    li h1 {
+        text-align: center;
+        padding: 8px 30px;
+        float: left;
+
+    }
+
+    li p {
+        text-align: end;
+        padding: 50px 50px;
+
+
+    }
+
+    p {
+        left: 100px;
+        size: 40px;
+    }
+
+    hr.line {
+        border: 2px solid #002a53;
+    }
+
+    .container {
+        border-radius: 25px;
+        background: #002a53;
+        color: white;
+        margin: 0;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .container1 {
+        /* border-radius: 25px; */
+        background: #002a53;
+        color: white;
+        height: 80px;
+        width: 130px;
+        text-align: center;
+        align-items: center;
+
+    }
+</style>
+
+<body>
+    <ul>
+        <li><img src="../static/bfl-logo.webp" style="height: 100px; width: 100px; top: 30px; left: 30px;  padding: 20px 12px;
+            float: left;"></li>
+        <li>
+            <h1 style="color: white; font-family: Rubik,sans-serif;
+            line-height: 0.9;">BAJAJ <br>FINSERV
+            </h1>
+        </li>
+        <li>
+            <img src="../static/logo.png"
+                style="height: 100px; width: 100px; top: 30px; align-items: flex-end; float: right;">
+        </li>
+
+    </ul>
+    <hr class="line">
+    <br>
+    <br>
+    <div style="padding: 30px" class="container">
+        <p><b>TAGS</b></p>
+        {{data}}
+
+    </div>
+    <br><br><br>
+    <br>
+
+    <div style="padding: 20px; background-color: #002a53; color: white;" class="container1">
+        <a href="index.html" style="color: white;">Upload another image </a>
+
+    </div>
+</body>
+
+</html>
